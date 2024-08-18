@@ -1,20 +1,17 @@
 @import url(restyle.css);
 @import url(var-fonts.css);
 
-
 .body_cont { 
-    min-height: 100vh;
-    margin: 0;
+    min-width: 300px;
+    height: 100%;
 }
-.container { 
-    width: 80%; /* Установите ширину контейнера */
-    max-width: 1200px; /* Ограничьте максимальную ширину */
-    margin: 0 auto; 
-    position: relative;
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .header_cont { 
-   
     position: absolute;
     z-index: 21;
     padding-top: 31px;
@@ -52,30 +49,103 @@
 }
 
 .gamebar {
-    min-height: 100vh; /* Высота экрана */
-    width: 100%; /* Ширина на 100% */
-    display: flex; /* Для центрирования содержимого, если нужно */
-    align-items: center;
-    justify-content: center;
-    background: url('/gamebar/img/image-section-one.png') no-repeat center center;
-    background-size: cover; /* Изображение занимает весь блок */
+    padding-top: 200px;
+    padding-bottom: 50px;
+    background: url('../img/image-section-one.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(255 187 187);
 }
 .gamebar_container {
-
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 120px;
+    max-width: 1170px;
     align-items: center;
-    justify-content: center;
-    place-items: center;
-    padding-top: 167px;
-
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
 }
+
+
 .gamebar_section_left {
     display: flex;
     flex-direction: column;
 
 }
-.button_btn {
-}
+
 .gamebar_section_rigth {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.gamebar_lowproperty_image_svg { 
+    position: absolute;
+    z-index: 1;
+    zoom: 2.88;
+}
+
+
+.gamebar_highproperty_image { 
+    position: relative;
+    z-index: 2;
+}
+
+.gamebar_box1 { 
+    position: absolute;
+    bottom: -12px;
+    left: 26rem;
+    z-index: 5;
+}
+
+.gamebar_box2 {
+    position: absolute;
+    left: -140px;
+    top: -60px;
+}
+
+
+.gamebar_highproperty_image > img { 
+    width: 100%;
+}
+
+
+.gamebar_section_left > h4 { 
+    color: var(--colors);
+    font-size: 20px;
+}
+.gamebar_section_left > h2 { 
+    color: #eb8382;
+    font-size: 3.3rem;
+    font-weight: bold;
+    font-style: initial;
+}
+.gamebar_section_left > h3  {
+    color: var(--colors);
+    font-size: 3.4rem;
+    padding-bottom: 1rem;
+}
+
+.gamebar_section_left > p {
+    font-size: 12px;
+    padding-bottom: 1.4rem;
+    color: #826f8c;
+    font-weight: bold;
+}
+
+.gamebar_section_left > .button_btn {
+    max-width: 240px;
+    padding: 10px 10px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .gamebar_container { 
+        max-width: 800px;
+    }
+    .gamebar_box1 {
+        position: absolute;
+        bottom: -63px;
+        left: 235px;
+        z-index: 5;
+    }
 }

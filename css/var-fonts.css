@@ -5,4 +5,7 @@
 :root { 
     --fonts: "Josefin Sans", sans-serif;
     --colors: #667b91;
+    --content-width: 1167px;
+    --container-offset: 50px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 }
