@@ -1,0 +1,81 @@
+@import url(restyle.css);
+@import url(var-fonts.css);
+
+
+.body_cont { 
+    min-height: 100vh;
+    margin: 0;
+}
+.container { 
+    width: 80%; /* Установите ширину контейнера */
+    max-width: 1200px; /* Ограничьте максимальную ширину */
+    margin: 0 auto; 
+    position: relative;
+}
+
+.header_cont { 
+   
+    position: absolute;
+    z-index: 21;
+    padding-top: 31px;
+    width: 100%;
+
+}
+.header_container { 
+    max-width: 1167px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigator_info { 
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    font-family: var(--fonts);
+    transition: 3.3s;
+}
+.button_btn {
+    text-decoration: none;
+    font-size: 18px;
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(115,103,190,1) 95%);
+    color: #fff;
+    padding: 19px 16px;
+    border-radius: 50px;
+    letter-spacing: 2.3px;
+}
+.header_style_list { 
+    display: flex;
+    gap: 2em;
+    color: var(--colors);
+    font-size: 16px;
+}
+
+.gamebar {
+    min-height: 100vh; /* Высота экрана */
+    width: 100%; /* Ширина на 100% */
+    display: flex; /* Для центрирования содержимого, если нужно */
+    align-items: center;
+    justify-content: center;
+    background: url('/gamebar/img/image-section-one.png') no-repeat center center;
+    background-size: cover; /* Изображение занимает весь блок */
+}
+.gamebar_container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    padding-top: 167px;
+
+}
+.gamebar_section_left {
+    display: flex;
+    flex-direction: column;
+
+}
+.button_btn {
+}
+.gamebar_section_rigth {
+}
