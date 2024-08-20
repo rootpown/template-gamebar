@@ -16,8 +16,19 @@
     z-index: 21;
     padding-top: 31px;
     width: 100%;
-
+    opacity: 0; 
+    animation: slideInFromBottom 1s ease-out forwards;
 }
+@keyframes slideInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 .header_container { 
     max-width: 1167px;
     margin: 0 auto;
@@ -50,7 +61,7 @@
 
 .gamebar {
     padding-top: 200px;
-    padding-bottom: 50px;
+    padding-bottom: 12.4rem;
     background: url('../img/image-section-one.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -70,31 +81,73 @@
 .gamebar_section_left {
     display: flex;
     flex-direction: column;
-
+    position: relative;
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out forwards;
 }
-
+.gamebar_section_left > img {
+    position: absolute;
+    top: 24rem;
+    left: 16rem;
+    animation: spin 2s linear infinite;
+}
+@keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 .gamebar_section_rigth {
     position: relative;
     width: 100%;
     height: 100%;
 }
 .gamebar_lowproperty_image_svg { 
-    position: absolute;
-    z-index: 1;
     zoom: 2.88;
 }
-
-
 .gamebar_highproperty_image { 
-    position: relative;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 2s ease-in-out forwards; 
+}
+.gamebar_box1, .gamebar_box2 { 
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 2s ease-in-out forwards; 
+}
+.gamebar_highproperty_image > img { 
+    position: absolute;
     z-index: 2;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
 .gamebar_box1 { 
     position: absolute;
-    bottom: -12px;
-    left: 26rem;
+    top: 26rem;
+    left: 72%;
     z-index: 5;
+    transform: translateY(100%);
 }
 
 .gamebar_box2 {
