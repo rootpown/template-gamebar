@@ -118,7 +118,7 @@ body {
       transform: rotate(360deg);
     }
   }
-main { 
+  main { 
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -376,14 +376,7 @@ main {
             background: url('/img/about-pc-bg.jpg') center center no-repeat; 
             background-size: cover;
         }
-        @media screen and (max-width: 1075px) { 
-            .about_pc_container_row { 
-                display: flex;
-                flex-direction: column;
-                max-width: 500px;
-                align-items: center;
-                margin: $auto;
-          }
+      
         .about_pc_container {
             max-width: $contentWidth;
             margin: $auto;
@@ -425,58 +418,67 @@ main {
                     padding: 1rem;
                     background-color: rgb(62, 158, 219);
                 }
-            }
-            > .about_pc_section_rigth { 
-                    position: relative;
-                .about_pc_images_row { 
-                    position: relative;
-                }
-               .about_element_1 { 
-                position: absolute;
-                z-index: 1;
-               }
-               .about_element_2 { 
-                position: absolute;
-                bottom: 7rem;
-                right: -4rem;
-               }
-               .about_element_3 {
-                position: absolute;
-                left: 11rem;
-                bottom: 10rem;
-                z-index: 7;
-                animation: spin 2s linear infinite;
-
-               }
-               .about_element_4 { 
-                position: absolute;
-                left: 16rem;
-                bottom: 12rem;
-                z-index: 7;
-                animation: spin 2s linear infinite;
-               }
-               .about_element_5  {
-                position: absolute;
-                left: 2rem;
-                bottom: 2rem;
-                z-index: 5;
-               }
-               .about_element_6  {
+             }
+             > .about_pc_section_rigth { 
                 position: relative;
-                top: 10rem;
-                z-index: 6;
-               }
-               @keyframes spin {
-                0% {
-                  transform: rotate(0deg); /* Начальная позиция */
-                }
-                100% {
-                  transform: rotate(360deg); /* Полный оборот */
-                }
-              }
-          
+                
+            .about_pc_images_row { 
+                position: relative;
             }
+           .about_element_1 { 
+            position: absolute;
+            z-index: 1;
+           }
+           .about_element_2 { 
+            position: absolute;
+            bottom: 7rem;
+            right: -4rem;
+           }
+           .about_element_3 {
+            position: absolute;
+            left: 11rem;
+            bottom: 10rem;
+            z-index: 7;
+            animation: spin 2s linear infinite;
+
+           }
+           .about_element_4 { 
+            position: absolute;
+            left: 16rem;
+            bottom: 12rem;
+            z-index: 7;
+            animation: spin 2s linear infinite;
+           }
+           .about_element_5  {
+            position: absolute;
+            left: 2rem;
+            bottom: 2rem;
+            z-index: 5;
+           }
+           .about_element_6  {
+            position: relative;
+            top: 10rem;
+            z-index: 6;
+           }
+           @keyframes spin {
+            0% {
+              transform: rotate(0deg); /* Начальная позиция */
+            }
+            100% {
+              transform: rotate(360deg); /* Полный оборот */
+            }
+          }
         }
-     
-}  
-}
+        }  
+        @media screen and (max-width: 1075px) { 
+            .about_pc_container_row { 
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+                align-items: center;
+                margin: $auto;
+          }
+        }
+
+  }
+
