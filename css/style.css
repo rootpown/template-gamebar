@@ -105,6 +105,11 @@ body {
     transform: rotate(360deg);
   }
 }
+main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 main > .gamebar {
   background: url("/img/image-section-one.png") center center no-repeat;
   background-color: #fff5eb;
@@ -163,7 +168,30 @@ main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section
   top: 32rem;
   left: 28rem;
 }
+@keyframes move {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 50px;
+  }
+  50% {
+    top: 50px;
+    left: 100px;
+  }
+  75% {
+    top: 70px;
+    left: 0;
+  }
+  100% {
+    top: 40px;
+    left: 0;
+  }
+}
 main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth {
+  animation: move 8s infinite;
   display: flex;
   align-items: center;
   position: relative;
