@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("../css/./restyle.css");
 body {
-  max-width: 1167px;
   margin: 0 auto;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -21,11 +20,12 @@ body {
   padding-bottom: 130px;
   width: 100%;
   display: flex;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 .header_cont > .header_container {
   width: 1167px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,5 +94,145 @@ body {
   }
   .header_cont > .header_container .navigator_info > a, .header_cont > .header_container ul > a {
     width: 225px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main > .gamebar {
+  background: url("/img/image-section-one.png") center center no-repeat;
+  background-color: #fff5eb;
+  background-size: cover;
+  padding-top: 14.3rem;
+  padding-bottom: 8.4rem;
+}
+main > .gamebar > .gamebar_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1167px;
+  margin: 0 auto;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row {
+  display: flex;
+  position: relative;
+  gap: 3rem;
+  align-items: center;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_left, main > .gamebar > .gamebar_container > .gamebar_container_row .gamebar_section_rigth {
+  max-width: 583.5px;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_left h4 {
+  font-weight: bold;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_left h2 {
+  color: #eb8382;
+  font-weight: 900;
+  font-size: 3.3rem;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_left h3 {
+  color: #667b91;
+  font-size: 3.1rem;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_left p {
+  letter-spacing: 1.3;
+  font-size: 20px;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_left button {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 50% 20%/10% 40%;
+  color: #fff;
+  padding: 1rem;
+  background-color: rgb(62, 158, 219);
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_left img {
+  animation: rotate 2s linear infinite;
+  position: absolute;
+  top: 32rem;
+  left: 28rem;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth > .gamebar_images_property > .gamebar_images_row {
+  display: flex;
+  align-items: center;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth > .gamebar_images_property > .gamebar_images_row > .gamebar_row_one {
+  min-width: 100%;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth > .gamebar_images_property > .gamebar_images_row > .gamebar_row_one > .gamebar_objects_image_low {
+  position: absolute;
+  z-index: 1;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth > .gamebar_images_property > .gamebar_images_row > .gamebar_row_one > .gamebar_objects_image {
+  position: relative;
+  z-index: 4;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth > .gamebar_images_property .gamebar_images_row > .gamebar_row_two {
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth > .gamebar_images_property > .gamebar_images_row > .gamebar_row_two > .gamebar_box1 {
+  position: absolute;
+  bottom: 12rem;
+  right: 84%;
+}
+main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section_rigth > .gamebar_images_property > .gamebar_images_row > .gamebar_row_two > .gamebar_box2 {
+  position: absolute;
+  top: 13rem;
+  left: 53%;
+  z-index: 5;
+}
+@media screen and (max-width: 1305px) {
+  main > .gamebar .gamebar_container {
+    padding-top: 7rem;
+  }
+  main > .gamebar .gamebar_container > .gamebar_container_row {
+    gap: 10rem;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+  }
+  main > .gamebar .gamebar_container > .gamebar_container_row > .gamebar_section_left > img {
+    position: absolute;
+    top: 38rem;
+    left: 9rem;
+  }
+  main > .gamebar .gamebar_images_row > .gamebar_row_one > img {
+    position: absolute;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 1075px) {
+  main > .gamebar .main > .gamebar {
+    padding-top: 8.3;
+  }
+  main > .gamebar .gamebar_container {
+    padding-top: 0.1rem;
+  }
+  main > .gamebar .gamebar_container > .gamebar_container_row {
+    display: flex;
+    flex-direction: column;
+  }
+  main > .gamebar .gamebar_container > .gamebar_container_row > .gamebar_section_left > img {
+    position: absolute;
+    top: 25rem;
+    left: 25rem;
   }
 }/*# sourceMappingURL=style.css.map */
