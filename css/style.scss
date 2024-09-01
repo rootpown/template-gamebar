@@ -372,5 +372,111 @@ main {
                 }
               }
         }
+        .about_pc { 
+            background: url('/img/about-pc-bg.jpg') center center no-repeat; 
+            background-size: cover;
+        }
+        @media screen and (max-width: 1075px) { 
+            .about_pc_container_row { 
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+                align-items: center;
+                margin: $auto;
+          }
+        .about_pc_container {
+            max-width: $contentWidth;
+            margin: $auto;
+        }
+        .about_pc_container_row { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+            padding-top: 10rem;
+            padding-bottom: 14rem;
+
+            > .about_pc_section_left { 
+                display: flex;
+                flex-direction: column;
+                gap: 1.3rem;
+                h4  {
+                    color: $bodyColor;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                h2 { 
+                    color: $colorTextP;
+                    font-weight: bold;
+                    font-size: 3.4rem;
+                }
+                p { 
+                    line-height: 23.7px;
+                        font-weight: bold;
+                }
+                a { 
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 22px;
+                    width: 210px;
+                    border: 1px solid black;
+                    border-radius: 50% 20% / 10% 40%;
+                    color: #fff;
+                    padding: 1rem;
+                    background-color: rgb(62, 158, 219);
+                }
+            }
+            > .about_pc_section_rigth { 
+                    position: relative;
+                .about_pc_images_row { 
+                    position: relative;
+                }
+               .about_element_1 { 
+                position: absolute;
+                z-index: 1;
+               }
+               .about_element_2 { 
+                position: absolute;
+                bottom: 7rem;
+                right: -4rem;
+               }
+               .about_element_3 {
+                position: absolute;
+                left: 11rem;
+                bottom: 10rem;
+                z-index: 7;
+                animation: spin 2s linear infinite;
+
+               }
+               .about_element_4 { 
+                position: absolute;
+                left: 16rem;
+                bottom: 12rem;
+                z-index: 7;
+                animation: spin 2s linear infinite;
+               }
+               .about_element_5  {
+                position: absolute;
+                left: 2rem;
+                bottom: 2rem;
+                z-index: 5;
+               }
+               .about_element_6  {
+                position: relative;
+                top: 10rem;
+                z-index: 6;
+               }
+               @keyframes spin {
+                0% {
+                  transform: rotate(0deg); /* Начальная позиция */
+                }
+                100% {
+                  transform: rotate(360deg); /* Полный оборот */
+                }
+              }
+          
+            }
+        }
      
 }  
+}

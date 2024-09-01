@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("../css/./restyle.css");
 body {
@@ -336,5 +337,108 @@ main > .vr_about_info .vr_about_container_row > .vr_about_section_right a {
   }
   100% {
     transform: translateY(0);
+  }
+}
+main .about_pc {
+  background: url("/img/about-pc-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 1075px) {
+  main .about_pc_container_row {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  main .about_pc_container {
+    max-width: 1167px;
+    margin: 0 auto;
+  }
+  main .about_pc_container_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+  }
+  main .about_pc_container_row > .about_pc_section_left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  main .about_pc_container_row > .about_pc_section_left h4 {
+    color: #667b91;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  main .about_pc_container_row > .about_pc_section_left h2 {
+    color: #eb8382;
+    font-weight: bold;
+    font-size: 3.4rem;
+  }
+  main .about_pc_container_row > .about_pc_section_left p {
+    line-height: 23.7px;
+    font-weight: bold;
+  }
+  main .about_pc_container_row > .about_pc_section_left a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    width: 210px;
+    border: 1px solid black;
+    border-radius: 50% 20%/10% 40%;
+    color: #fff;
+    padding: 1rem;
+    background-color: rgb(62, 158, 219);
+  }
+  main .about_pc_container_row > .about_pc_section_rigth {
+    position: relative;
+  }
+  main .about_pc_container_row > .about_pc_section_rigth .about_pc_images_row {
+    position: relative;
+  }
+  main .about_pc_container_row > .about_pc_section_rigth .about_element_1 {
+    position: absolute;
+    z-index: 1;
+  }
+  main .about_pc_container_row > .about_pc_section_rigth .about_element_2 {
+    position: absolute;
+    bottom: 7rem;
+    right: -4rem;
+  }
+  main .about_pc_container_row > .about_pc_section_rigth .about_element_3 {
+    position: absolute;
+    left: 11rem;
+    bottom: 10rem;
+    z-index: 7;
+    animation: spin 2s linear infinite;
+  }
+  main .about_pc_container_row > .about_pc_section_rigth .about_element_4 {
+    position: absolute;
+    left: 16rem;
+    bottom: 12rem;
+    z-index: 7;
+    animation: spin 2s linear infinite;
+  }
+  main .about_pc_container_row > .about_pc_section_rigth .about_element_5 {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    z-index: 5;
+  }
+  main .about_pc_container_row > .about_pc_section_rigth .about_element_6 {
+    position: relative;
+    top: 10rem;
+    z-index: 6;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Начальная позиция */
+    }
+    100% {
+      transform: rotate(360deg); /* Полный оборот */
+    }
   }
 }/*# sourceMappingURL=style.css.map */
