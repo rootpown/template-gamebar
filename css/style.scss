@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('../css/./restyle.css');
+
+
+$bodyFont: "Josefin Sans", sans-serif;
+$bodyColor: #667b91;
+$contentWidth: 1167px;
+$colorTextP: #eb8382;
+$auto: 0 auto;
+
+body { 
+    max-width: $contentWidth;
+    margin: $auto;
+    font-family: $bodyFont;
+}
+//  Основной блок - родитель
+.container { 
+   position: relative;
+}
+
+.btn { 
+    color: white;
+    text-decoration: none;
+    // padding: 19 / 20px;
+    padding: 1rem;
+}
+.header_cont { 
+        padding-top: 30px;
+        padding-bottom: 130px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        > .header_container {
+            width: $contentWidth;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            > .header_logo { 
+                > .burger  {
+                    position: fixed;
+                    visibility: hidden;
+                }
+                .burger > .bar { 
+                    width: 30px;
+                    height: 6px;
+                    margin: 5px 0;
+                    background-color: $bodyColor;
+                    transition: 0.3s;
+                }
+            }
+
+            .navigator_info, ul  {
+                display: flex;
+                align-items: center;
+                gap: 1.6rem;
+                font-size: 23px;
+                .button_btn { 
+                    border: 1px solid black;
+                    // border-radius: 30%;
+                    border-radius: 50% 20% / 10% 40%;
+                }
+                li >  a {
+                    color: $bodyColor;
+                    text-decoration: none;
+                } li > a:hover { 
+                    border-bottom: 1px solid black;
+                }
+            }   
+            .button_btn { 
+                color: #fff;
+                background-color: rgb(62, 158, 219);
+            }
+            @media screen and (max-width: 1305px) {
+                &.header_container  { 
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+            }
+            @media screen and (max-width: 758px) { 
+                .navigator_info  {
+                    visibility: hidden;
+                }
+
+                
+                .header_logo {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .header_logo > .burger { 
+                    position: sticky;
+                    visibility: visible;
+                }
+
+                .navigator_info { 
+                    background-color: red;
+                }
+                .navigator_info, ul { 
+                    position: absolute;
+                    right: 49px;
+                    top: 97px;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    > a { 
+                        width: 225px;
+                    }
+                }
+            }
+            
+
+        } 
+}

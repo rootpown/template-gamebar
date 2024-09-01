@@ -1,1 +1,98 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("../css/./restyle.css");
+body {
+  max-width: 1167px;
+  margin: 0 auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.header_cont {
+  padding-top: 30px;
+  padding-bottom: 130px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.header_cont > .header_container {
+  width: 1167px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_cont > .header_container > .header_logo > .burger {
+  position: fixed;
+  visibility: hidden;
+}
+.header_cont > .header_container > .header_logo .burger > .bar {
+  width: 30px;
+  height: 6px;
+  margin: 5px 0;
+  background-color: #667b91;
+  transition: 0.3s;
+}
+.header_cont > .header_container .navigator_info, .header_cont > .header_container ul {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 23px;
+}
+.header_cont > .header_container .navigator_info .button_btn, .header_cont > .header_container ul .button_btn {
+  border: 1px solid black;
+  border-radius: 50% 20%/10% 40%;
+}
+.header_cont > .header_container .navigator_info li > a, .header_cont > .header_container ul li > a {
+  color: #667b91;
+  text-decoration: none;
+}
+.header_cont > .header_container .navigator_info li > a:hover, .header_cont > .header_container ul li > a:hover {
+  border-bottom: 1px solid black;
+}
+.header_cont > .header_container .button_btn {
+  color: #fff;
+  background-color: rgb(62, 158, 219);
+}
+@media screen and (max-width: 1305px) {
+  .header_cont > .header_container.header_container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 758px) {
+  .header_cont > .header_container .navigator_info {
+    visibility: hidden;
+  }
+  .header_cont > .header_container .header_logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header_cont > .header_container .header_logo > .burger {
+    position: sticky;
+    visibility: visible;
+  }
+  .header_cont > .header_container .navigator_info {
+    background-color: red;
+  }
+  .header_cont > .header_container .navigator_info, .header_cont > .header_container ul {
+    position: absolute;
+    right: 49px;
+    top: 97px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header_cont > .header_container .navigator_info > a, .header_cont > .header_container ul > a {
+    width: 225px;
+  }
+}/*# sourceMappingURL=style.css.map */
