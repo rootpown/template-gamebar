@@ -127,7 +127,7 @@ main {
             background: url('/img/image-section-one.png') center center no-repeat ;
             background-color: $backgroundColor;
             background-size: cover;
-            padding-top: 14.3rem;
+            padding-top: 11.3rem;
             padding-bottom: 8.4rem;
             > .gamebar_container { 
                 display: flex;
@@ -274,7 +274,7 @@ main {
                         padding-top: 8.3;
                     }
                     .gamebar_container { 
-                        padding-top: 0.1rem;
+                        padding-top: 3.1rem;
                          > .gamebar_container_row { 
                                 display: flex;
                                 flex-direction: column;
@@ -290,4 +290,87 @@ main {
                 }
           }
 
- }
+        > .vr_about_info { 
+      
+            background: url('/img/about-bg.jpg') center center no-repeat;
+            background-color: $backgroundColor;
+            background-size: cover;
+            >   .vr_about_container { 
+                max-width: $contentWidth;
+                margin: $auto;
+                 }
+            .vr_about_container_row { 
+                padding-top: 3.3rem * 2;
+                padding-bottom: 3rem;
+                gap: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                > .vr_about_section_left { 
+                    position: relative;
+                    .vr_screen_savage { 
+                        animation: moveUpDown 3s ease-in-out infinite;
+                        position: absolute;
+                        left: 17rem;
+                        bottom: 15rem;
+                    }
+                }
+                > .vr_about_section_right { 
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+
+                    h4 { 
+                        color: $bodyColor;
+                        font-size: 20px;
+                    }
+                    h2 { 
+                        color: $colorTextP;
+                        font-size: 3.3rem;
+                    }
+                    p { 
+                        line-height: 23.7px;
+                        font-weight: bold;
+                    }
+                    a { 
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 22px;
+                        width: 210px;
+                        border: 1px solid black;
+                        border-radius: 50% 20% / 10% 40%;
+                        color: #fff;
+                        padding: 1rem;
+                        background-color: rgb(62, 158, 219);
+                    }
+                    
+                }
+
+            }
+            @media screen and (max-width: 1075px) {
+                     .vr_about_container_row { 
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 auto;
+                        max-width: 500px;
+                    }
+              
+                }
+            
+            @keyframes moveUpDown {
+                0% {
+                  transform: translateY(0);
+                }
+                50% {
+                  transform: translateY(100px);
+                }
+                100% {
+                  transform: translateY(0); 
+                }
+              }
+        }
+     
+}  

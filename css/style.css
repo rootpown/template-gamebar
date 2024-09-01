@@ -114,7 +114,7 @@ main > .gamebar {
   background: url("/img/image-section-one.png") center center no-repeat;
   background-color: #fff5eb;
   background-size: cover;
-  padding-top: 14.3rem;
+  padding-top: 11.3rem;
   padding-bottom: 8.4rem;
 }
 main > .gamebar > .gamebar_container {
@@ -252,7 +252,7 @@ main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section
     padding-top: 8.3;
   }
   main > .gamebar .gamebar_container {
-    padding-top: 0.1rem;
+    padding-top: 3.1rem;
   }
   main > .gamebar .gamebar_container > .gamebar_container_row {
     display: flex;
@@ -262,5 +262,79 @@ main > .gamebar > .gamebar_container > .gamebar_container_row > .gamebar_section
     position: absolute;
     top: 25rem;
     left: 25rem;
+  }
+}
+main > .vr_about_info {
+  background: url("/img/about-bg.jpg") center center no-repeat;
+  background-color: #fff5eb;
+  background-size: cover;
+}
+main > .vr_about_info > .vr_about_container {
+  max-width: 1167px;
+  margin: 0 auto;
+}
+main > .vr_about_info .vr_about_container_row {
+  padding-top: 6.6rem;
+  padding-bottom: 3rem;
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main > .vr_about_info .vr_about_container_row > .vr_about_section_left {
+  position: relative;
+}
+main > .vr_about_info .vr_about_container_row > .vr_about_section_left .vr_screen_savage {
+  animation: moveUpDown 3s ease-in-out infinite;
+  position: absolute;
+  left: 17rem;
+  bottom: 15rem;
+}
+main > .vr_about_info .vr_about_container_row > .vr_about_section_right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main > .vr_about_info .vr_about_container_row > .vr_about_section_right h4 {
+  color: #667b91;
+  font-size: 20px;
+}
+main > .vr_about_info .vr_about_container_row > .vr_about_section_right h2 {
+  color: #eb8382;
+  font-size: 3.3rem;
+}
+main > .vr_about_info .vr_about_container_row > .vr_about_section_right p {
+  line-height: 23.7px;
+  font-weight: bold;
+}
+main > .vr_about_info .vr_about_container_row > .vr_about_section_right a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  width: 210px;
+  border: 1px solid black;
+  border-radius: 50% 20%/10% 40%;
+  color: #fff;
+  padding: 1rem;
+  background-color: rgb(62, 158, 219);
+}
+@media screen and (max-width: 1075px) {
+  main > .vr_about_info .vr_about_container_row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
