@@ -8,6 +8,7 @@ $contentWidth: 1167px;
 $colorTextP: #eb8382;
 $auto: 0 auto;
 $backgroundColor: #fff5eb;
+$background: #FFE6D7;
 
 body { 
     margin: $auto;
@@ -470,6 +471,139 @@ body {
           }
         }
         }  
+        .plan { 
+                background-color: $background;
+                padding-top: 5.3rem;
+                padding-bottom: 5rem;
+            .plan_container { 
+                max-width: $contentWidth + 100px;
+                margin: $auto;
+
+            }   
+            .plan_container_row { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+                .plan_header { 
+                    gap: 1rem;
+
+                    h3 { 
+                        color: $bodyColor;
+                        font-weight: bold;
+                        font-size: 30px;
+                        text-align: center; 
+                    }
+                    h1  {
+                        padding-top: 1.5rem;
+                        color: $colorTextP;
+                        font-weight: bold;
+                        font-size: 4.11rem;
+                        text-align: center;
+                    }
+                }
+                .plan_row { 
+                    display: flex;
+                    align-items: center;
+                    flex: 1;
+                    padding-top: 4rem;
+                    gap: 3rem;
+
+                    .plan_price_list { 
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #fbdacf8c;
+                        padding: 3rem;
+                        border-radius: 2rem;
+                        p {
+                            color: $bodyColor;
+                            font-weight: normal;
+                            font-size: 2.2rem;
+                            padding-bottom: 2rem;
+                        }
+                        .pricing_list_price { 
+                            color: $colorTextP;
+                            font-size: 2.4rem;
+                            padding-bottom: 2rem;
+                            span { 
+                                font-size: 3.2rem;
+                                font-weight: bold;
+                            }
+                        }
+                        ul > li { 
+                            // background: url('/img/click.png');
+                            padding-bottom: 2rem;
+                            list-style:  url('/img/click.png');
+                            color: $bodyColor;
+                            font-weight: bold;
+                        }
+                        a { 
+                        
+                        }
+                        .button_btn  {
+                            border: 1px solid black;
+                            border-radius: 3rem;
+                            font-size: 20px;
+                            color: #fff;
+                            padding: 1rem;
+                            background-color: rgb(62, 158, 219);
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                    }
+                    .plan_price_list_style { 
+                        display: flex;
+                        flex-direction: column;
+                        background: linear-gradient(90deg, rgba(72,100,130,1) 0%, rgba(102,106,135,1) 55%, rgba(124,110,139,1) 100%);
+                        padding: 5rem 3rem;
+                        border-radius: 2rem;
+                  
+                        p {
+                            color: #fff;
+                            font-weight: normal;
+                            font-size: 2.2rem;
+                            padding-bottom: 2rem;
+                        }
+                        .pricing_list_price { 
+                            color: $colorTextP;
+                            font-size: 2.4rem;
+                            padding-bottom: 2rem;
+                            span { 
+                                font-size: 3.2rem;
+                                font-weight: bold;
+                            }
+                        }
+                        ul > li { 
+                            // background: url('/img/click.png');
+                            padding-bottom: 2rem;
+                            list-style:  url('/img/click.png');
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                        a { 
+                        
+                        }
+                        .button_btn  {
+                            border: 1px solid black;
+                            border-radius: 3rem;
+                            font-size: 20px;
+                            color: #fff;
+                            padding: 1rem;
+                            background-color: rgb(62, 158, 219);
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                    }
+                }
+                @media screen and (max-width: 1305px) {
+                    .plan_row { 
+                        max-width: 500px;
+                        flex-wrap: wrap;
+                    }
+                }
+        }
+
         @media screen and (max-width: 1075px) { 
             .about_pc_container_row { 
                 display: flex;

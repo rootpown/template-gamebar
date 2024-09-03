@@ -433,6 +433,126 @@ main .about_pc_container_row > .about_pc_section_rigth .about_element_6 {
     transform: rotate(360deg); /* Полный оборот */
   }
 }
+main .plan {
+  background-color: #FFE6D7;
+  padding-top: 5.3rem;
+  padding-bottom: 5rem;
+}
+main .plan .plan_container {
+  max-width: 1267px;
+  margin: 0 auto;
+}
+main .plan .plan_container_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .plan .plan_header {
+  gap: 1rem;
+}
+main .plan .plan_header h3 {
+  color: #667b91;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+main .plan .plan_header h1 {
+  padding-top: 1.5rem;
+  color: #eb8382;
+  font-weight: bold;
+  font-size: 4.11rem;
+  text-align: center;
+}
+main .plan .plan_row {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-top: 4rem;
+  gap: 3rem;
+}
+main .plan .plan_row .plan_price_list {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(251, 218, 207, 0.5490196078);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+main .plan .plan_row .plan_price_list p {
+  color: #667b91;
+  font-weight: normal;
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+}
+main .plan .plan_row .plan_price_list .pricing_list_price {
+  color: #eb8382;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+main .plan .plan_row .plan_price_list .pricing_list_price span {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+main .plan .plan_row .plan_price_list ul > li {
+  padding-bottom: 2rem;
+  list-style: url("/img/click.png");
+  color: #667b91;
+  font-weight: bold;
+}
+main .plan .plan_row .plan_price_list .button_btn {
+  border: 1px solid black;
+  border-radius: 3rem;
+  font-size: 20px;
+  color: #fff;
+  padding: 1rem;
+  background-color: rgb(62, 158, 219);
+  text-decoration: none;
+  text-align: center;
+}
+main .plan .plan_row .plan_price_list_style {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgb(72, 100, 130) 0%, rgb(102, 106, 135) 55%, rgb(124, 110, 139) 100%);
+  padding: 5rem 3rem;
+  border-radius: 2rem;
+}
+main .plan .plan_row .plan_price_list_style p {
+  color: #fff;
+  font-weight: normal;
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+}
+main .plan .plan_row .plan_price_list_style .pricing_list_price {
+  color: #eb8382;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+main .plan .plan_row .plan_price_list_style .pricing_list_price span {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+main .plan .plan_row .plan_price_list_style ul > li {
+  padding-bottom: 2rem;
+  list-style: url("/img/click.png");
+  color: #fff;
+  font-weight: bold;
+}
+main .plan .plan_row .plan_price_list_style .button_btn {
+  border: 1px solid black;
+  border-radius: 3rem;
+  font-size: 20px;
+  color: #fff;
+  padding: 1rem;
+  background-color: rgb(62, 158, 219);
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (max-width: 1305px) {
+  main .plan .plan_row {
+    max-width: 500px;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1075px) {
   main .about_pc_container_row {
     display: flex;
