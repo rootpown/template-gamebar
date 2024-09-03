@@ -486,7 +486,7 @@ main .plan .plan_row .plan_price_list p {
 }
 main .plan .plan_row .plan_price_list .pricing_list_price {
   color: #eb8382;
-  font-size: 2.4rem;
+  font-size: 1.1rem;
   padding-bottom: 2rem;
 }
 main .plan .plan_row .plan_price_list .pricing_list_price span {
@@ -508,12 +508,13 @@ main .plan .plan_row .plan_price_list .button_btn {
   background-color: rgb(62, 158, 219);
   text-decoration: none;
   text-align: center;
+  border: none;
 }
 main .plan .plan_row .plan_price_list_style {
   display: flex;
   flex-direction: column;
   background: linear-gradient(90deg, rgb(72, 100, 130) 0%, rgb(102, 106, 135) 55%, rgb(124, 110, 139) 100%);
-  padding: 5rem 3rem;
+  padding: 7rem 2rem;
   border-radius: 2rem;
 }
 main .plan .plan_row .plan_price_list_style p {
@@ -533,7 +534,7 @@ main .plan .plan_row .plan_price_list_style .pricing_list_price span {
 }
 main .plan .plan_row .plan_price_list_style ul > li {
   padding-bottom: 2rem;
-  list-style: url("/img/click.png");
+  list-style: url("/img/Vectorgr.png");
   color: #fff;
   font-weight: bold;
 }
@@ -546,11 +547,13 @@ main .plan .plan_row .plan_price_list_style .button_btn {
   background-color: rgb(62, 158, 219);
   text-decoration: none;
   text-align: center;
+  border: none;
 }
 @media screen and (max-width: 1305px) {
   main .plan .plan_row {
     max-width: 500px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 1075px) {
