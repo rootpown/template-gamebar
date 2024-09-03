@@ -53,6 +53,10 @@ body {
   transition: 0.3s ease;
 }
 @media screen and (max-width: 1305px) {
+  .header_cont > .header_container .header_logo {
+    margin: 0 auto;
+    gap: 6rem;
+  }
   .header_cont > .header_container .navigator_info {
     display: flex;
     background-color: #fff;

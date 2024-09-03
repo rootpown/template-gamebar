@@ -63,7 +63,10 @@ body {
                 }
             }
             @media screen and (max-width: 1305px) { 
-
+                .header_logo { 
+                    margin: 0 auto;
+                    gap: 6rem;
+                }
                 .navigator_info{
                     display: flex;
                     background-color: #fff;
