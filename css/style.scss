@@ -17,6 +17,7 @@ body {
 //  Основной блок - родитель
 .container { 
    position: relative;
+   overflow: hidden;
 }
 
 .btn { 
@@ -382,6 +383,15 @@ body {
             max-width: $contentWidth;
             margin: $auto;
         }
+        @media screen and (max-width: 1075px) { 
+            .about_pc_container_row { 
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+                align-items: center;
+                margin: $auto;
+          }
+        }
         .about_pc_container_row { 
             display: flex;
             align-items: center;
@@ -390,6 +400,7 @@ body {
             padding-top: 10rem;
             padding-bottom: 14rem;
 
+            
             > .about_pc_section_left { 
                 display: flex;
                 flex-direction: column;
@@ -461,6 +472,7 @@ body {
             top: 10rem;
             z-index: 6;
            }
+           
            @keyframes spin {
             0% {
               transform: rotate(0deg); /* Начальная позиция */
@@ -469,6 +481,7 @@ body {
               transform: rotate(360deg); /* Полный оборот */
             }
           }
+          
         }
         }  
         .plan { 
@@ -606,16 +619,59 @@ body {
                     }
                 }
         }
-
-        @media screen and (max-width: 1075px) { 
-            .about_pc_container_row { 
-                display: flex;
-                flex-direction: column;
-                max-width: 500px;
-                align-items: center;
-                margin: $auto;
-          }
-        }
+    
+       
 
   }
+  .footer { 
+    background-color: $background;
+    padding-bottom: 2rem;
 
+    .footer_container { 
+        max-width: $contentWidth;
+        margin: $auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_row { 
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+
+        .header_logo { 
+            width: 270px;
+        }
+        span { 
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        ul  {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+
+       
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        .footer_row  {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span { 
+                max-width: 200px;
+            }
+
+            ul  {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+            }
+        }
+    }
+}
