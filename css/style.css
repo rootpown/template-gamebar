@@ -52,28 +52,10 @@ body {
   background-color: #667b91;
   transition: 0.3s ease;
 }
-@media screen and (max-width: 1305px) {
-  .header_cont > .header_container .header_logo {
-    margin: 0 auto;
-    gap: 6rem;
-  }
-  .header_cont > .header_container .navigator_info {
+@media screen and (max-width: 1070px) {
+  .header_cont > .header_container .header_cont .hedaer_logo {
     display: flex;
-    background-color: #fff;
-    padding: 1rem;
-    z-index: 122;
-  }
-  .header_cont > .header_container .navigator_info > .header_style_list {
     flex-direction: column;
-  }
-  .header_cont > .header_container #burger {
-    visibility: visible;
-  }
-  .header_cont > .header_container .navigator_info {
-    opacity: 0;
-    position: absolute; /* Позиционирование выпадающего меню */
-    right: 20px; /* Смещение от правого края */
-    top: 60px; /* Смещение вниз от бургера */
   }
 }
 .header_cont > .header_container .navigator_info {
