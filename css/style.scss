@@ -51,7 +51,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     cursor: pointer;
-                    margin-left: auto; /* Для выравнивания бургера справа */
+                    margin-left: auto; 
                     padding: 10px;
                 }
                 .burger > .bar { 
@@ -62,32 +62,36 @@ body {
                     transition: 0.3s ease;
                 }
             }
-            @media screen and (max-width: 1305px) { 
-                .header_logo { 
-                    margin: 0 auto;
-                    gap: 6rem;
-                }
-                .navigator_info{
+            @media screen and (max-width: 1070px) {
+                .header_cont { 
+                .hedaer_logo { 
                     display: flex;
-                    background-color: #fff;
-                    padding: 1rem;
-                    z-index: 122;
-
-
-                     > .header_style_list { 
-                        flex-direction: column;
-                     }
+                    flex-direction: column;
                 }
+            }
+                // .header_logo { 
+                //     margin: 0 auto;
+                //     gap: 6rem;
+                // }
+                // .navigator_info{
+                //     display: flex;
+                //     background-color: #fff;
+                //     padding: 1rem;
+                //     z-index: 122;
+                //      > .header_style_list { 
+                //         flex-direction: column;
+                //      }
+                // }
 
-                #burger { 
-                    visibility: visible;
-                }
-                  .navigator_info { 
-                    opacity: 0;
-                    position: absolute; /* Позиционирование выпадающего меню */
-                    right: 20px; /* Смещение от правого края */
-                    top: 60px; /* Смещение вниз от бургера */
-                  }
+                // #burger { 
+                //     visibility: visible;
+                // }
+                //   .navigator_info { 
+                //     opacity: 0;
+                //     position: absolute; /* Позиционирование выпадающего меню */
+                //     right: 20px; /* Смещение от правого края */
+                //     top: 60px; /* Смещение вниз от бургера */
+                //   }
                     
                 }
             .navigator_info { 
@@ -105,7 +109,7 @@ body {
             .navigator_info, ul  {
                 display: flex;
                 align-items: center;
-                gap: 1.6rem;
+                gap: 1.6rem; 
                 font-size: 23px;
                 .button_btn { 
                     border: 1px solid black;

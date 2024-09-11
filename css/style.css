@@ -42,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  margin-left: auto; /* Для выравнивания бургера справа */
+  margin-left: auto;
   padding: 10px;
 }
 .header_cont > .header_container > .header_logo .burger > .bar {
